@@ -122,7 +122,7 @@ class MobileApp extends Component {
     } = this.state;
     const { classes, pokemon, grid } = this.props;
 
-    let skillList = Object.keys(grid.selectedCellsById)
+    let skillArray = Object.keys(grid.selectedCellsById)
       .map(cellId => {
         return grid.selectedCellsById[cellId].name;
       })
@@ -139,7 +139,7 @@ class MobileApp extends Component {
           isOpened={isSkillListOpened}
           onOpenHandler={this.handleOnOpenSkillList}
           onCloseHandler={this.handleOnCloseSkillList}
-          skillList={skillList}
+          skillArray={skillArray}
         />
 
         <MainAppbar
