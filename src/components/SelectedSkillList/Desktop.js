@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import ClearIcon from '@material-ui/icons/Clear';
 
 class SelectedSkillList extends Component {
-  // turns arrays to object with value being number of duplicates. eg. [Atk+5, Atk+5] -> {Atk+5: 2}
+  // turns an array into an object with value being number of duplicates. eg. [Atk+5, Atk+5] -> {Atk+5: 2}
   filterArrayForDuplicates = arr => {
     return arr.reduce((result, current) => {
       if (!result[current]) {
@@ -17,31 +17,6 @@ class SelectedSkillList extends Component {
 
   renderList() {
     const { selectedCellsById } = this.props.grid;
-
-    // let skillArray = Object.keys(selectedCellsById)
-    //   .map(cellId => {
-    //     return selectedCellsById[cellId].name;
-    //   })
-    //   .sort();
-
-    // let skillNameArray = Object.keys(this.filterArrayForDuplicates(skillArray));
-    // let numberOfDuplicatesArray = Object.values(
-    //   this.filterArrayForDuplicates(skillArray)
-    // );
-
-    // let skillList = skillNameArray.map((name, index) => {
-    //   return numberOfDuplicatesArray[index] > 1
-    //     ? name + ' x ' + numberOfDuplicatesArray[index]
-    //     : name;
-    // });
-
-    // return skillList.map((item, index) => {
-    //   return (
-    //     <li className="active-grid list-group-item" key={index}>
-    //       {item} <ClearIcon />
-    //     </li>
-    //   );
-    // });
 
     let skillArray = Object.keys(selectedCellsById)
       .map(cellId => {
