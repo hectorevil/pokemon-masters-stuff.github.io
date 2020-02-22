@@ -8,8 +8,12 @@ export default createStyles(theme => ({
     marginBottom: theme.spacing(2)
   },
   listRoot: {
-    width: "70vw",
+    width: '70vw',
     minWidth: 220,
-    maxWidth: 360,
+    maxWidth: 360
   },
+  secondary: {
+    display: 'inline-block',
+    color: 'red'
+  }
 }));
