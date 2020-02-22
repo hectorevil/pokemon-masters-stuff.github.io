@@ -1,19 +1,68 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import ClearIcon from '@material-ui/icons/Clear';
 
 class SelectedSkillList extends Component {
+  // turns arrays to object with value being number of duplicates. eg. [Atk+5, Atk+5] -> {Atk+5: 2}
+  filterArrayForDuplicates = arr => {
+    return arr.reduce((result, current) => {
+      if (!result[current]) {
+        result[current] = 1;
+      } else {
+        result[current] += 1;
+      }
+      return result;
+    }, {});
+  };
+
   renderList() {
     const { selectedCellsById } = this.props.grid;
-    let skillList = Object.keys(selectedCellsById)
+
+    // let skillArray = Object.keys(selectedCellsById)
+    //   .map(cellId => {
+    //     return selectedCellsById[cellId].name;
+    //   })
+    //   .sort();
+
+    // let skillNameArray = Object.keys(this.filterArrayForDuplicates(skillArray));
+    // let numberOfDuplicatesArray = Object.values(
+    //   this.filterArrayForDuplicates(skillArray)
+    // );
+
+    // let skillList = skillNameArray.map((name, index) => {
+    //   return numberOfDuplicatesArray[index] > 1
+    //     ? name + ' x ' + numberOfDuplicatesArray[index]
+    //     : name;
+    // });
+
+    // return skillList.map((item, index) => {
+    //   return (
+    //     <li className="active-grid list-group-item" key={index}>
+    //       {item} <ClearIcon />
+    //     </li>
+    //   );
+    // });
+
+    let skillArray = Object.keys(selectedCellsById)
       .map(cellId => {
         return selectedCellsById[cellId].name;
       })
       .sort();
 
+    let skillList = Object.keys(this.filterArrayForDuplicates(skillArray));
+    let numberOfDuplicatesArray = Object.values(
+      this.filterArrayForDuplicates(skillArray)
+    );
+
     return skillList.map((item, index) => {
       return (
         <li className="active-grid list-group-item" key={index}>
           {item}
+          <div style={{ display: 'inline-block', color: 'red' }}>
+            {numberOfDuplicatesArray[index] > 1
+              ? '\u00A0 x ' + numberOfDuplicatesArray[index]
+              : null}
+          </div>
         </li>
       );
     });
