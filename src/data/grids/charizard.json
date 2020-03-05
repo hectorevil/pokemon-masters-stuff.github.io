@@ -23,7 +23,7 @@
       "value": 5,
       "u6": 99799999
     },
-    "move": { "name": "Attack +5", "energyCost": 0, "orbCost": 5 }
+    "move": { "name": "Ataque +5", "energyCost": 0, "orbCost": 5 }
   },
   {
     "cellId": 1000000002,
@@ -36,7 +36,7 @@
       "value": 5,
       "u6": 99699999
     },
-    "move": { "name": "Defense +5", "energyCost": 0, "orbCost": 5 }
+    "move": { "name": "Defensa +5", "energyCost": 0, "orbCost": 5 }
   },
   {
     "cellId": 1000000003,
@@ -75,7 +75,7 @@
       "value": 5,
       "u6": 99399999
     },
-    "move": { "name": "Speed +5", "energyCost": 0, "orbCost": 5 }
+    "move": { "name": "Velocidad +5", "energyCost": 0, "orbCost": 5 }
   },
   {
     "cellId": 1000000006,
@@ -114,7 +114,7 @@
       "value": 5,
       "u6": 99699999
     },
-    "move": { "name": "Defense +5", "energyCost": 2, "orbCost": 24 }
+    "move": { "name": "Defensa +5", "energyCost": 2, "orbCost": 24 }
   },
   {
     "cellId": 1000000009,
@@ -157,7 +157,7 @@
       "value": 20,
       "u6": 99799997
     },
-    "move": { "name": "Attack +20", "energyCost": 10, "orbCost": 120 }
+    "move": { "name": "Ataque +20", "energyCost": 10, "orbCost": 120 }
   },
   {
     "cellId": 1000000011,
@@ -351,7 +351,7 @@
       "value": 5,
       "u6": 99399999
     },
-    "move": { "name": "Speed +5", "energyCost": 2, "orbCost": 24 }
+    "move": { "name": "Velocidad +5", "energyCost": 2, "orbCost": 24 }
   },
   {
     "cellId": 1000000018,
@@ -548,7 +548,7 @@
     },
     "move": {
       "name": "Haymaker",
-      "description": "The more the user’s Attack has been raised, the more it powers up sync moves.",
+      "description": "The more the user’s Ataque has been raised, the more it powers up sync moves.",
       "energyCost": 10,
       "orbCost": 120
     }
@@ -600,7 +600,7 @@
       "value": 10,
       "u6": 99399998
     },
-    "move": { "name": "Speed +10", "energyCost": 4, "orbCost": 48 }
+    "move": { "name": "Velocidad +10", "energyCost": 4, "orbCost": 48 }
   },
   {
     "cellId": 1000000029,
@@ -643,7 +643,7 @@
       "value": 10,
       "u6": 99399998
     },
-    "move": { "name": "Speed +10", "energyCost": 4, "orbCost": 48 }
+    "move": { "name": "Velocidad +10", "energyCost": 4, "orbCost": 48 }
   },
   {
     "cellId": 1000000031,
@@ -656,7 +656,7 @@
       "value": 10,
       "u6": 99399998
     },
-    "move": { "name": "Speed +10", "energyCost": 4, "orbCost": 48 }
+    "move": { "name": "Velocidad +10", "energyCost": 4, "orbCost": 48 }
   },
   {
     "cellId": 1000000032,
@@ -808,7 +808,7 @@
       "value": 5,
       "u6": 99699999
     },
-    "move": { "name": "Defense +5", "energyCost": 3, "orbCost": 36 }
+    "move": { "name": "Defensa +5", "energyCost": 3, "orbCost": 36 }
   },
   {
     "cellId": 1000000039,
@@ -821,7 +821,7 @@
       "value": 5,
       "u6": 99399999
     },
-    "move": { "name": "Speed +5", "energyCost": 3, "orbCost": 36 }
+    "move": { "name": "Velocidad +5", "energyCost": 3, "orbCost": 36 }
   },
   {
     "cellId": 1000000040,
@@ -923,7 +923,7 @@
       "u6": 99099992
     },
     "move": {
-      "name": "Speeding Sun 2",
+      "name": "Velocidading Sun 2",
       "description": "Quickly charges the move gauge when the weather is sunny.",
       "energyCost": 8,
       "orbCost": 96
